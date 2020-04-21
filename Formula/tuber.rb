@@ -2,18 +2,20 @@
 class Tuber < Formula
   desc "🥔"
   homepage "https://github.com/Freshly/tuber"
-  version "0.2.0-prerelease"
+  version "0.4.0"
   bottle :unneeded
 
   if OS.mac?
-    url "https://github.com/Freshly/tuber/releases/download/v0.2.0-prerelease/tuber_0.2.0-prerelease_Darwin_x86_64.tar.gz"
-    sha256 "23fbc68131a28edf977332d3c7fd20334a048cbb006f8be6342782296e38799e"
+    url "https://github.com/Freshly/tuber/releases/download/v0.4.0/tuber_0.4.0_Darwin_x86_64.tar.gz"
+    sha256 "73bcdf745a7bf1ec703be544c715bed61995377f131105d14c187be334a085ed"
   elsif OS.linux?
     if Hardware::CPU.intel?
-      url "https://github.com/Freshly/tuber/releases/download/v0.2.0-prerelease/tuber_0.2.0-prerelease_Linux_x86_64.tar.gz"
-      sha256 "d54a64d7454882ee73c95c942345d0fd4f21015ba752da23328df23fecf46578"
+      url "https://github.com/Freshly/tuber/releases/download/v0.4.0/tuber_0.4.0_Linux_x86_64.tar.gz"
+      sha256 "265a3f2cf11c3e4b4c04cb1020153f15d3e566fed6dc313817753d7085f4a23a"
     end
   end
+  
+  depends_on "kubernetes-cli"
 
   def install
     bin.install "tuber"
