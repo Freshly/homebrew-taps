@@ -15,8 +15,6 @@ class Tuber < Formula
     end
   end
   
-  depends_on "kubernetes-cli"
-
   def install
     bin.install "tuber"
   end
