@@ -2,16 +2,16 @@
 class Tuber < Formula
   desc "🥔"
   homepage "https://github.com/Freshly/tuber"
-  version "0.8.1"
+  version "1.0.0"
   bottle :unneeded
 
   if OS.mac?
-    url "https://github.com/Freshly/tuber/releases/download/v0.8.1/tuber_0.8.1_Darwin_x86_64.tar.gz"
-    sha256 "a7937a3fa2c5136d01a44e6d080efafd108bc8ba71474d685fb3785b2a8be1fc"
+    url "https://github.com/Freshly/tuber/releases/download/v1.0.0/tuber_1.0.0_Darwin_x86_64.tar.gz"
+    sha256 "ca06a153f2467d690507489e0ae4f55964d3945a105d2db163d033127dd109d1"
   end
   if OS.linux? && Hardware::CPU.intel?
-    url "https://github.com/Freshly/tuber/releases/download/v0.8.1/tuber_0.8.1_Linux_x86_64.tar.gz"
-    sha256 "dc6b394f144116ff1689391e9e165754d7c04a816cc6c4d4f7b0600efd2b5e9c"
+    url "https://github.com/Freshly/tuber/releases/download/v1.0.0/tuber_1.0.0_Linux_x86_64.tar.gz"
+    sha256 "170aa7b2acd7d56d2287df30b6c12a06d9c293ff191973141c2ee48421f0e010"
   end
 
   def install
