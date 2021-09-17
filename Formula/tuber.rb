@@ -5,28 +5,28 @@
 class Tuber < Formula
   desc "🥔"
   homepage "https://github.com/Freshly/tuber"
-  version "1.0.8"
+  version "1.1.2"
   bottle :unneeded
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/Freshly/tuber/releases/download/v1.0.8/tuber_1.0.8_Darwin_x86_64.tar.gz"
-      sha256 "39f4e995aa777bcc7faab1863f63c5f9f44f81e70ca27da0b26df87bf2f6b1db"
+      url "https://github.com/Freshly/tuber/releases/download/v1.1.2/tuber_1.1.2_Darwin_x86_64.tar.gz"
+      sha256 "970c72b7c358cfcddf32e4f3092a5f91726d1bada2ccf32b1a5abd961fa33ab4"
     end
     if Hardware::CPU.arm?
-      url "https://github.com/Freshly/tuber/releases/download/v1.0.8/tuber_1.0.8_Darwin_arm64.tar.gz"
-      sha256 "3b7c191c4def56fa8e40899c4c04602d21be00e2685434a33cd593dffd77cf6e"
+      url "https://github.com/Freshly/tuber/releases/download/v1.1.2/tuber_1.1.2_Darwin_arm64.tar.gz"
+      sha256 "c059e2b63f57059ef8b0ca062ce70072cd737fbc7e957522fe512ef61a41aa60"
     end
   end
 
   on_linux do
     if Hardware::CPU.intel?
-      url "https://github.com/Freshly/tuber/releases/download/v1.0.8/tuber_1.0.8_Linux_x86_64.tar.gz"
-      sha256 "61e3d75ec0fd1e9fd5642651e289571efe7292882d3eb8bd75dec9dd667e3f65"
+      url "https://github.com/Freshly/tuber/releases/download/v1.1.2/tuber_1.1.2_Linux_x86_64.tar.gz"
+      sha256 "d9cdeacc38f0700888ceb92bda6e0ad67d860d611ec34a1f077e4bac782711f3"
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/Freshly/tuber/releases/download/v1.0.8/tuber_1.0.8_Linux_arm64.tar.gz"
-      sha256 "9481c43ea7cadba8978836e22f1f4c4e55461532530eb9a8377cde08395e0ca4"
+      url "https://github.com/Freshly/tuber/releases/download/v1.1.2/tuber_1.1.2_Linux_arm64.tar.gz"
+      sha256 "bc12149ba07b3580ecbe75b50f59e74deeb0db05ca1f38cc8227f32143761eea"
     end
   end
 
