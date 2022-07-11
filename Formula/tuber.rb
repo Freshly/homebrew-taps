@@ -6,7 +6,6 @@ class Tuber < Formula
   desc "🥔"
   homepage "https://github.com/Freshly/tuber"
   version "1.1.2"
-  bottle :unneeded
 
   on_macos do
     if Hardware::CPU.intel?
